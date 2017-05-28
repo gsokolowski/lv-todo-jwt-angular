@@ -171,30 +171,30 @@ class TodoController extends Controller
 
 
         // PDO - works
-//        $pdo = DB::connection()->getPdo();
-//        $description = $request->description;
-//        $owner_id = $user->id;
-//        $is_done = $request->is_done;
-//        $updated_at = $dateTime;
-//
-//        // todos table not todo
-//        $sql = "update todos SET description = ?, owner_id = ?, is_done = ?,  updated_at = ? WHERE id = ?";
-//        $query = $pdo->prepare($sql);
-//        $response = $query->execute(array($description, $owner_id, $is_done, $updated_at, $id));
+        $pdo = DB::connection()->getPdo();
+        $description = $request->description;
+        $owner_id = $user->id;
+        $is_done = $request->is_done;
+        $updated_at = $dateTime;
+
+        // todos table not todo
+        $sql = "update todos SET description = ?, owner_id = ?, is_done = ?,  updated_at = ? WHERE id = ?";
+        $query = $pdo->prepare($sql);
+        $response = $query->execute(array($description, $owner_id, $is_done, $updated_at, $id));
 
 
         // laravel
-        $todo = Todo::where('owner_id', $user->id)->where('id',$id)->first();
-        $todo->description=$request->description;
-        $todo->owner_id = $user->id;
-        $todo->is_done=$request->is_done;
-        $todo->updated_at=$dateTime;
-        $response = $todo->save();
+//        $todo = Todo::where('owner_id', $user->id)->where('id',$id)->first();
+//        $todo->description=$request->description;
+//        $todo->owner_id = $user->id;
+//        $todo->is_done=$request->is_done;
+//        $todo->updated_at=$dateTime;
+//        $response = $todo->save();
         //var_dump($response);
 
         if($response){
             return response('Resource updated successfully',204);
-        }else{
+        } else {
             return response('Unauthoraized',403);
         }
     }
@@ -202,10 +202,24 @@ class TodoController extends Controller
     public function destroy($id)
     {
         $user = JWTAuth::parseToken()->authenticate();
-        $todo = Todo::where('owner_id', $user->id)->where('id',$id)->first();
 
-        if($todo){
-            Todo::destroy($todo->id);
+        // DB query builder - works
+//        $response = DB::table('todos')
+//            ->where('id', $id)
+//            ->delete();
+
+        // PDO - works
+        $pdo = DB::connection()->getPdo();
+        // todos table not todo
+        $sql = "delete from todos WHERE id = ? limit 1";
+        $query = $pdo->prepare($sql);
+        $response = $query->execute(array($id));
+
+        // laravel
+//        $todo = Todo::where('owner_id', $user->id)->where('id',$id)->first();
+//        $response = Todo::destroy($todo->id);
+
+        if($response){
             return  response('Success',204);
         }else{
             return response('Unauthoraized',403);

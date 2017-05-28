@@ -77,19 +77,21 @@
       <file leaf-file-name="TodoController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TodoController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.779661">
-              <caret line="206" column="18" selection-start-line="206" selection-start-column="18" selection-end-line="206" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.5762712">
+              <caret line="208" column="25" selection-start-line="208" selection-start-column="25" selection-end-line="208" selection-end-column="25" />
               <folding>
                 <element signature="e#40#74#0#PHP" expanded="true" />
-                <marker date="1496011794000" expanded="true" signature="1826:1858" placeholder="select * fro..todos..." />
-                <marker date="1496011794000" expanded="true" signature="1928:1947" placeholder="select * fro..todos..." />
-                <marker date="1496011794000" expanded="true" signature="1928:1949" placeholder="select * fro..todos..." />
-                <marker date="1496011794000" expanded="true" signature="3093:3125" placeholder="select * fro..todos..." />
-                <marker date="1496011794000" expanded="true" signature="3219:3251" placeholder="SELECT * FRO..numbers..." />
-                <marker date="1496011794000" expanded="true" signature="4680:4750" placeholder="insert into ..." />
-                <marker date="1496011794000" expanded="true" signature="5090:5187" placeholder="insert into ..." />
-                <marker date="1496011794000" expanded="true" signature="6695:6784" placeholder="update todos..." />
-                <marker date="1496011794000" expanded="true" signature="6701:6771" placeholder="insert into ..." />
+                <marker date="1496012694000" expanded="true" signature="1826:1858" placeholder="select * fro..todos..." />
+                <marker date="1496012694000" expanded="true" signature="1928:1947" placeholder="select * fro..todos..." />
+                <marker date="1496012694000" expanded="true" signature="1928:1949" placeholder="select * fro..todos..." />
+                <marker date="1496012694000" expanded="true" signature="3093:3125" placeholder="select * fro..todos..." />
+                <marker date="1496012694000" expanded="true" signature="3219:3251" placeholder="SELECT * FRO..numbers..." />
+                <marker date="1496012694000" expanded="true" signature="4680:4750" placeholder="insert into ..." />
+                <marker date="1496012694000" expanded="true" signature="5090:5187" placeholder="insert into ..." />
+                <marker date="1496012694000" expanded="true" signature="6679:6768" placeholder="update todos..." />
+                <marker date="1496012694000" expanded="true" signature="6685:6755" placeholder="insert into ..." />
+                <marker date="1496012694000" expanded="true" signature="7781:7819" placeholder="delete from ..." />
+                <marker date="1496012694000" expanded="true" signature="7792:7811" placeholder="update todos..." />
               </folding>
             </state>
           </provider>
@@ -451,19 +453,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TodoController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.779661">
-          <caret line="206" column="18" selection-start-line="206" selection-start-column="18" selection-end-line="206" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.5762712">
+          <caret line="208" column="25" selection-start-line="208" selection-start-column="25" selection-end-line="208" selection-end-column="25" />
           <folding>
             <element signature="e#40#74#0#PHP" expanded="true" />
-            <marker date="1496011794000" expanded="true" signature="1826:1858" placeholder="select * fro..todos..." />
-            <marker date="1496011794000" expanded="true" signature="1928:1947" placeholder="select * fro..todos..." />
-            <marker date="1496011794000" expanded="true" signature="1928:1949" placeholder="select * fro..todos..." />
-            <marker date="1496011794000" expanded="true" signature="3093:3125" placeholder="select * fro..todos..." />
-            <marker date="1496011794000" expanded="true" signature="3219:3251" placeholder="SELECT * FRO..numbers..." />
-            <marker date="1496011794000" expanded="true" signature="4680:4750" placeholder="insert into ..." />
-            <marker date="1496011794000" expanded="true" signature="5090:5187" placeholder="insert into ..." />
-            <marker date="1496011794000" expanded="true" signature="6695:6784" placeholder="update todos..." />
-            <marker date="1496011794000" expanded="true" signature="6701:6771" placeholder="insert into ..." />
+            <marker date="1496012694000" expanded="true" signature="1826:1858" placeholder="select * fro..todos..." />
+            <marker date="1496012694000" expanded="true" signature="1928:1947" placeholder="select * fro..todos..." />
+            <marker date="1496012694000" expanded="true" signature="1928:1949" placeholder="select * fro..todos..." />
+            <marker date="1496012694000" expanded="true" signature="3093:3125" placeholder="select * fro..todos..." />
+            <marker date="1496012694000" expanded="true" signature="3219:3251" placeholder="SELECT * FRO..numbers..." />
+            <marker date="1496012694000" expanded="true" signature="4680:4750" placeholder="insert into ..." />
+            <marker date="1496012694000" expanded="true" signature="5090:5187" placeholder="insert into ..." />
+            <marker date="1496012694000" expanded="true" signature="6679:6768" placeholder="update todos..." />
+            <marker date="1496012694000" expanded="true" signature="6685:6755" placeholder="insert into ..." />
+            <marker date="1496012694000" expanded="true" signature="7781:7819" placeholder="delete from ..." />
+            <marker date="1496012694000" expanded="true" signature="7792:7811" placeholder="update todos..." />
           </folding>
         </state>
       </provider>
